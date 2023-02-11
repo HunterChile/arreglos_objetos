@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Ventas de la semana:</h3>
+<ul></ul>
+<script>
+
+const ventasDeLaSemana = [
+{dia: "Lunes", total: 34000},
+{dia: "Martes", total: 40000},
+{dia: "Miércoles", total: 41000},
+{dia: "Jueves", total: 50000},
+{dia: "Viernes", total: 62000},
+{dia: "Sábado", total: 85000},
+{dia: "Domingo", total: 20000},
+]
+
+const ul = document.querySelector("ul")
+for(let venta of ventasDeLaSemana){
+ul.innerHTML+= `<li>${venta.dia}: ${venta.total} </li>`
+}
+
+
+
+</script>
+</body>
+</html>
