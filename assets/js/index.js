@@ -140,7 +140,7 @@ const filtrarPropiedades = (propiedades, inputs) => {
       propiedades[i].metros <= inputs.metrosHasta
 
     ){
-      propiedadesFiltradas[indexPropiedadFiltrada] = propiedad[i];
+      propiedadesFiltradas[indexPropiedadFiltrada] = propiedades[i];
       indexPropiedadFiltrada++;
     }
   }
